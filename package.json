@@ -7,7 +7,8 @@
     "build": "npm run build-server && npm run build-client",
     "build-server": "babel src/server --out-dir ./dist",
     "build-client": "babel src/client --copy-files --out-dir ./dist/public",
-    "start": "node ./dist/index.js"
+    "start": "node ./dist/index.js",
+    "test": "jest ./src"
   },
   "keywords": [
     "Node",
@@ -16,10 +17,13 @@
   "author": "Thomas Faller",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.3"
+    "express": "^4.16.3",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.7.0"
+    "babel-preset-env": "^1.7.0",
+    "jest": "^22.4.3"
   }
 }
