@@ -2,7 +2,11 @@ import React, { Component } from 'react'
 
 export default class App extends Component {
   render(){
-    return <div>Welcome to React Boilerplate App</div>
+    return(
+      <div>
+        <h1>React</h1>
+        <h2>boilerplate</h2>
+      </div>
+    )
   }
 }
-
